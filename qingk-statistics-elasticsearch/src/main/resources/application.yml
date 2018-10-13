@@ -1,0 +1,23 @@
+spring:
+  data:
+    # elasticsearch自动配置
+    elasticsearch:
+      # 集群名称
+      cluster-name: qingkelk
+      # 节点列表
+      cluster-nodes: 10.0.219.21:9300
+      repositories:
+        # 是否启用repository
+        enabled: true
+      properties:
+        client:
+          transport:
+            # 客户端是否去嗅探整个集群的状态，把集群中其它机器的ip地址加到客户端中，这样做的好处是一般你不用手动设置集群里所有集群的ip到连接客户端，它会自动帮你添加，并且自动发现新加入集群的机器
+            sniff: true
+            # 是否忽略集群名称验证
+            ignore_cluster_name: false
+            # 设置等待ping命令返回结果时间
+            ping_timeout: 5s
+            # 节点之间互相ping，互连检测时间间隔
+            nodes_sampler_interval: 5s
+            

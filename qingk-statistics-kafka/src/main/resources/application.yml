@@ -1,0 +1,35 @@
+# kafka自动配置
+statistics:
+  kafka:
+    consumer:
+      zookeeper-connect: 10.0.219.165:2180
+      zookeeper-session-timeout: 30000
+      auto-commit-enable: true
+      auto-commit-interval: 1000
+      auto-offset-reset: largest
+      rebalance-backoff-ms: 2000
+      rebalance-max-retries: 10           
+      groups:
+        StatisticsTestGroup:
+          topic: new_statistics_test
+          group-id: StatisticsTestGroup
+          concurrency: 5
+        
+    
+    producer:
+      zookeeper-connect: 10.0.219.165:2180
+      kafka-connect: 10.0.219.165:9090    
+          
+  
+          
+
+   
+
+         
+    
+
+          
+
+           
+        
+      

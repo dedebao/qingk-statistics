@@ -1,0 +1,26 @@
+server: 
+  port: 8005
+  
+
+spring:
+  application:
+    name: qk-configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/dedebao/qkstatistics-configcenter/
+          username: 
+          password: 
+    
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://qkstatistics1.com:8001/eureka/,http://qkstatistics2.com:8002/eureka/,http://qkstatistics3.com:8003/eureka/
+      
+
+      
+ 
+
+ 

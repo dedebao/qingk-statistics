@@ -1,0 +1,20 @@
+server: 
+  port: 8004
+ 
+spring: 
+  application:
+    name: qk-gateway
+ 
+eureka: 
+  client: 
+    service-url: 
+      defaultZone: http://qkstatistics1.com:8001/eureka/,http://qkstatistics2.com:8002/eureka/,http://qkstatistics3.com:8003/eureka/
+    
+zuul:
+  routes:
+    customer1:
+      path: /customer1/**
+      service-id: qkstatistics-customer1
+    customer2:
+      path: /customer2/**
+      service-id: qkstatistics-customer2

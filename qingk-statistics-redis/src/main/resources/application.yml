@@ -1,0 +1,12 @@
+# redis自动配置
+qingk:
+  redis:
+    host: 10.10.49.3
+    port: 6380
+    database: 2
+    max-idle: 8
+    min-idle: 0
+    max-total: 8
+    max-wait: 6000
+    test-on-borrow: true
+    timeout: 10000

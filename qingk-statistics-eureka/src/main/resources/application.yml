@@ -1,0 +1,24 @@
+
+#security:
+  #basic:
+    #enabled: true
+  #user:
+    #name: root
+    #password: 123abc
+
+server: 
+  port: 8001
+ 
+eureka: 
+  instance:
+    hostname: qkstatistics1.com #eureka服务端的实例名称
+  client: 
+    register-with-eureka: false     #false表示不向注册中心注册自己。
+    fetch-registry: false     #false表示自己端就是注册中心，我的职责就是维护服务实例，并不需要去检索服务
+    service-url: 
+      #defaultZone: http://qkstatistics2.com:8002/eureka/,http://qkstatistics3.com:8003/eureka/
+      defaultZone: http://qkstatistics1.com:8001/eureka/
+      
+ 
+
+ 

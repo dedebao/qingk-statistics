@@ -1,0 +1,36 @@
+        
+qingk:
+  phoenix:
+    driver-class-name: org.apache.phoenix.jdbc.PhoenixDriver
+    url: jdbc:phoenix:10.0.219.136
+    username:
+    password:
+    auto-commit: true
+    maximum-pool-size: 50
+    minimum-idle: 1
+    idle-timeout: 30000
+    read-only: false
+    connection-timeout: 30000
+    max-lifetime: 1800000 
+    
+  mysql:
+    username: root
+    password: 123abc
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://10.10.49.11:3306/mmsdb_formaldev?autoReconnect=true&useUnicode=true&characterEncoding=utf8&relaxAutoCommit=true&zeroDateTimeBehavior=convertToNull
+    auto-commit: true
+    maximum-pool-size: 50
+    minimum-idle: 1
+    idle-timeout: 30000
+    read-only: false
+    connection-timeout: 30000
+    max-lifetime: 1800000
+    
+  enitypackage: com.allook.statistics.database.demo.enity 
+    
+
+  
+      
+ 
+
+ 

@@ -1,0 +1,17 @@
+server: 
+  port: 8012
+  
+spring:
+  application:
+    name: customerservice-feign
+           
+ 
+eureka: 
+  client: 
+    service-url: 
+      #defaultZone: http://qkstatistics1.com:8001/eureka/,http://qkstatistics2.com:8002/eureka/,http://qkstatistics3.com:8003/eureka/
+      defaultZone: http://qkstatistics1.com:8001/eureka/
+      
+ 
+
+ 
